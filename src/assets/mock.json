@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "60f5a2b8b438ae001f6a37d9",
+    "content": "Buy groceries",
+    "completed": false
+  },
+  {
+    "_id": "60f5a2d5b438ae001f6a37da",
+    "content": "Complete homework",
+    "completed": true
+  },
+  {
+    "_id": "60f5a2ebb438ae001f6a37db",
+    "content": "Read a book",
+    "completed": false
+  }
+]
