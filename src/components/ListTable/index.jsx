@@ -6,7 +6,7 @@ const ListTable = ({data, getListTodo}) => {
     <>
       <h2 className="list-header font-bold text-2xl">Todo List</h2>
       <ul className="list-container">
-        <div  className="flex justify-between font-extrabold">
+        <div  className="flex justify-between font-extrabold bg-slate-500 text-white">
           <div>
             <span>Content</span>
           </div>

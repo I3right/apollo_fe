@@ -19,16 +19,18 @@ const List = ({todo, i, getListTodo}) => {
   return (
     <li key={i} className="todo flex justify-between">
       <span>{todo.content}</span>
-      <div>
-        <span className={todo.completed ? "text-green-700" : "text-red-700"}>
+      <div className="flex">
+        <span className={todo.completed ? "text-green-700 " : "text-red-700"}>
           {todo.completed ? "Completed" : "Not compoleted"}
         </span>
-        <button className="btn-toggle" onClick={() => handleFinished(todo)}>
-          Finshd
-        </button>
-        <button className="btn-delete" onClick={() => handleDelete(todo)}>
-          Delete
-        </button>
+        <div className="btn-group">
+          <button className="btn-toggle" onClick={() => handleFinished(todo)}>
+            Finshd
+          </button>
+          <button className="btn-delete" onClick={() => handleDelete(todo)}>
+            Delete
+          </button>
+        </div>
       </div>
     </li>
   );
