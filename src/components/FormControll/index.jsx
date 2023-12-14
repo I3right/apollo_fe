@@ -17,9 +17,9 @@ const FormControll = ({ getListTodo }) => {
   };
 
   return (
-    <div className="w-[240px]">
-      <h2>FormControll</h2>
-      <form onSubmit={handleSubmit(submitData)} className="flex">
+    <div className="w-[240px] mt-4 p-2 bg-slate-400 ">
+      <h2 className="font-bold text-2xl">FormControll</h2>
+      <form onSubmit={handleSubmit(submitData)} className=" flex justify-between relative">
         <div>
           <input
             name="content"
@@ -27,15 +27,15 @@ const FormControll = ({ getListTodo }) => {
               required: true,
             })}
             type="text"
-            placeholder="add todo here!"
+            placeholder="Add todo here"
           />
           {errors.content?.type === "required" && (
-            <p role="alert" className="text-red-600">
-              Fill contnt !
+            <p role="alert" className="text-red-600 absolute top-8">
+              please enter content.
             </p>
           )}
         </div>
-        <button className="my-auto">ADD</button>
+        <button className="my-auto w-10 bg-[#e2e0e0] hover:bg-[#ababab]">ADD</button>
       </form>
     </div>
   );
